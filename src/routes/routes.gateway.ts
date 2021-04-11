@@ -51,7 +51,7 @@ export class RoutesGateway implements OnModuleInit {
     const clients = this.server.sockets.connected;
     if (!(clientId in clients)) {
       console.error(
-        'Client not exist, refresh React App and resend new direction',
+        'Client not exists, refresh React Application and resend new direction again.',
       );
       return;
     }

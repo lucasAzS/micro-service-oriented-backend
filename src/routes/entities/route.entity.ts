@@ -10,6 +10,7 @@ export class Route {
 
   @Prop()
   title: string;
+
   @Prop(
     raw({
       lat: { type: Number },
@@ -17,6 +18,7 @@ export class Route {
     }),
   )
   startPosition: { lat: number; lng: number };
+
   @Prop(
     raw({
       lat: { type: Number },
